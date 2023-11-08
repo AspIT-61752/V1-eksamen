@@ -3,8 +3,9 @@
 ### TODO:
 
 - [x] Init on GitHub
-- [ ] Basic HTML and CSS setup
-- [ ] Work on the Homepage
+- [x] Basic HTML and CSS setup
+- [x] Work on the Homepage
 - [ ] Make the header (Homepage)
-- [ ] Make the body (Homepage)
-- [ ] Make the footer (Homepage)
+- [x] Make the body (Homepage)
+- [x] Make the footer (Homepage)
+- [ ] Desktop version (Homepage)
