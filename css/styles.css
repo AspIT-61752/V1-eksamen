@@ -26,13 +26,108 @@
 
   /* --link-hover-light-bg: #111111; */
   --link-hover-light-bg: #f06201;
+  /* --link-hover-light-bg: #7e4e2f; */
   --link-hover-dark-bg: #fff;
+
+  /* You can't change the color, unless you use a filter */
+  /* Converter used: https://codepen.io/sosuke/pen/Pjoqqp */
+  --filter-orange: invert(39%) sepia(42%) saturate(4842%) hue-rotate(11deg)
+    brightness(104%) contrast(99%);
+
+  --filter-white: invert(100%) sepia(0%) saturate(0%) hue-rotate(301deg)
+    brightness(105%) contrast(101%);
 }
 
 * {
   padding: 0;
   margin: 0;
 }
+
+header {
+  display: flex;
+
+  background-color: var(--color-black);
+}
+
+nav img {
+  padding-top: 1%;
+  /* padding-left: 5%; */
+  width: 100px;
+  height: 50px;
+}
+
+/* Hamburger START */
+
+.view-mobile {
+  z-index: 10;
+  /* position: absolute; */
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-bottom: 2%;
+}
+
+/* Changes the color of the SVG icons */
+label img {
+  filter: var(--filter-orange);
+}
+
+ul li a {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+.menu-icon {
+}
+
+.close-icon {
+  display: none;
+  z-index: 8;
+}
+
+.checkbox {
+  display: none;
+}
+
+.view-mobile ul {
+  display: none;
+}
+
+.checkbox:checked ~ ul {
+  padding-top: 5%;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: 7%;
+  background-color: var(--color-black);
+  width: 100%;
+  height: 550vh;
+  text-align: center;
+}
+
+.checkbox:checked ~ ul li {
+  padding-bottom: 1.5em;
+}
+
+.checkbox:checked ~ ul li a {
+  text-decoration: none;
+  color: var(--color-main);
+  font-size: 1.2em;
+}
+
+.checkbox:checked ~ label .menu-icon {
+  display: none;
+}
+
+.checkbox:checked ~ label .close-icon {
+  display: block;
+}
+
+.view-desktop {
+  display: none;
+}
+
+/* Hamburger END */
 
 li,
 a {
@@ -74,6 +169,7 @@ main p {
 
 footer {
   background-color: var(--color-black);
+  margin-top: 8vh;
   font-weight: bold;
 }
 
@@ -100,6 +196,7 @@ footer p {
 #logo {
   width: 16%;
   margin: 2vh 4vw;
+  z-index: 26;
 }
 
 #logo img {
@@ -178,6 +275,14 @@ section.shoes div > * {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .view-desktop {
+    display: flex;
+  }
+
+  .view-mobile {
+    display: none;
   }
 
   section.shoes div {
