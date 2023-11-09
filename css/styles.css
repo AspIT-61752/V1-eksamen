@@ -29,6 +29,8 @@
   /* --link-hover-light-bg: #7e4e2f; */
   --link-hover-dark-bg: #fff;
 
+  --link-transition-time: 0.4s;
+
   /* You can't change the color, unless you use a filter */
   /* Converter used: https://codepen.io/sosuke/pen/Pjoqqp */
   --filter-orange: invert(39%) sepia(42%) saturate(4842%) hue-rotate(11deg)
@@ -138,7 +140,7 @@ a {
 
 a:hover,
 div a:hover {
-  transition: 0.4s;
+  transition: var(--link-transition-time);
   color: var(--link-hover-light-bg);
 }
 
@@ -279,6 +281,36 @@ section.shoes div > * {
 
   .view-desktop {
     display: flex;
+    flex-direction: row;
+
+    margin-top: auto;
+    margin-right: 4vw;
+    margin-bottom: auto;
+    margin-left: auto;
+    /* margin: auto auto; */
+  }
+
+  .view-desktop ul {
+    display: flex;
+    flex-direction: row;
+    width: 34vw;
+
+    justify-content: space-evenly;
+  }
+
+  /* .view-desktop li {
+    padding: 2% 0;
+
+    text-align: right;
+  } */
+
+  .view-desktop a {
+    color: var(--color-main);
+  }
+
+  .view-desktop a:hover {
+    transition: var(--link-transition-time);
+    color: var(--link-hover-light-bg);
   }
 
   .view-mobile {

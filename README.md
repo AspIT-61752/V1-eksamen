@@ -9,3 +9,8 @@
 - [x] Make the body (Homepage)
 - [x] Make the footer (Homepage)
 - [ ] Desktop version (Homepage)
+- [ ] Work on the About page
+- [ ] Work on the Contact page
+- [ ] Work on the History page
+- [ ]
+- [ ] Change NIKE logo from orange to white
