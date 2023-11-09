@@ -52,44 +52,39 @@ h1 {
 }
 
 /* ID's */
-#support-image {
-  margin: 0;
+
+/* Classes */
+.img-width {
   width: 100%;
 }
 
-/* Classes */
-
-.page-wrapper {
-  display: block;
+.img-left {
+  float: 0;
+  margin-right: 1;
 }
 
-.returning-list li {
-  display: list-item;
-  margin-left: 0.6em;
-  margin-bottom: 0.4em;
-  font-family: "Raleway", sans-serif;
+.img-right {
+  float: 0;
+  margin-left: 0;
 }
 
 @media screen and (min-width: 768px) {
   /* Media start */
-  section div * {
-    margin: 0;
-  }
 
   /* ID's */
-  #support-image {
-    width: 50%;
-    margin: 2vh auto;
-  }
 
   /* Classes */
-  .page-wrapper {
-    /* display: flex; */
-    /* flex-direction: row; */
-    flex-wrap: wrap;
+  .img-width {
+    width: 50%;
   }
 
-  .page-wrapper img {
+  .img-left {
     float: left;
+    margin-right: 1vw;
+  }
+
+  .img-right {
+    float: right;
+    margin-left: 1vw;
   }
 }

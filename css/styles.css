@@ -58,6 +58,10 @@ nav img {
   height: 50px;
 }
 
+ul li {
+  text-transform: uppercase;
+}
+
 /* Hamburger START */
 
 .view-mobile {
