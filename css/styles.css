@@ -228,7 +228,7 @@ footer p {
 }
 
 .shoes {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -321,6 +321,14 @@ section.shoes div > * {
     display: none;
   }
 
+  .shoes {
+    /* margin: 0 auto; */
+  }
+
+  .shoes div {
+    margin: 2vh auto !important;
+  }
+
   section.shoes div {
     /*  3 shoes pr row
         2% margin
@@ -328,8 +336,16 @@ section.shoes div > * {
         100% - 16% = 84%
         84% / 3 = 28%
     */
-    max-width: 28%;
+    /* max-width: 28%; */
+    width: 33%;
 
+    display: flex;
+    align-content: center;
+
+    /* margin: 0 auto; */
+  }
+
+  section.shoes div * {
     margin: 0 auto;
   }
 }
