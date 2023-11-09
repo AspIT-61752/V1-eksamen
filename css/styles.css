@@ -75,7 +75,7 @@ ul li {
 
 /* Changes the color of the SVG icons */
 label img {
-  filter: var(--filter-orange);
+  filter: var(--filter-white);
 }
 
 ul li a {
@@ -206,7 +206,7 @@ footer p {
 }
 
 #logo img {
-  width: 100%;
+  width: 100px;
 }
 
 #banner img {
