@@ -148,6 +148,16 @@ div a:hover {
   color: var(--link-hover-light-bg);
 }
 
+a {
+  transition: var(--link-transition-time) ease-in;
+  color: var(--color-black);
+}
+
+a:hover {
+  transition: var(--link-transition-time) ease-in;
+  color: var(--link-hover-light-bg);
+}
+
 h1,
 h2,
 h3 {
