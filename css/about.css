@@ -45,6 +45,11 @@
   margin: 0;
 }
 
+/* It overwrites the original in styles.css */
+main p {
+  margin: 0 0;
+}
+
 h1 {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
@@ -68,6 +73,14 @@ h1 {
   margin-left: 0;
 }
 
+.view-mobile {
+  display: flex;
+}
+
+.view-computer {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   /* Media start */
 
@@ -75,16 +88,62 @@ h1 {
 
   /* Classes */
   .img-width {
-    width: 50%;
+    width: 500%;
+    height: 50%;
+  }
+
+  .img-width-middle {
+    width: 375%;
+    height: 50%;
   }
 
   .img-left {
-    float: left;
+    /* float: left; */
     margin-right: 1vw;
+    /* width: ; */
+  }
+
+  .img-left div,
+  .img-right div {
+    display: block;
+    width: 50%;
   }
 
   .img-right {
-    float: right;
+    /* float: right; */
+
     margin-left: 1vw;
+    /* align-self: baseline; */
+  }
+
+  .text-box-middle {
+    text-align: left;
+  }
+
+  .text-box-middle h2 {
+    text-align: right;
+  }
+
+  .text-box {
+    text-align: left;
+  }
+
+  .flex-container-left {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+  }
+
+  .flex-container-right {
+    display: flex;
+  }
+
+  .view-mobile {
+    display: none;
+  }
+
+  .view-computer {
+    display: flex;
   }
 }
