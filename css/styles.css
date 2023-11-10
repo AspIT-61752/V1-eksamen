@@ -184,6 +184,7 @@ footer article {
 }
 
 footer a {
+  transition: var(--link-transition-time) ease-in;
   color: var(--color-gray);
 }
 
@@ -333,13 +334,16 @@ section.shoes div > * {
   } */
 
   .view-desktop a {
+    transition: var(--link-transition-time) ease-in;
     color: var(--color-main);
   }
 
   .view-desktop a:hover {
-    transition: color var(--link-hover-light-bg) var(--link-transition-time)
+    /* transition: color var(--link-hover-light-bg) var(--link-transition-time)
       ease-in-out;
-    transition: ease-out var(--link-transition-time);
+    transition: ease-out var(--link-transition-time); */
+    transition: var(--link-transition-time) ease-in;
+    color: var(--link-hover-light-bg);
   }
 
   .view-mobile {

@@ -49,6 +49,12 @@ main p {
   margin: 0 0;
 }
 
+p a {
+  margin-top: 1vh;
+  transition: var(--link-transition-time) ease-in;
+  color: var(--color-gray);
+}
+
 h1 {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
